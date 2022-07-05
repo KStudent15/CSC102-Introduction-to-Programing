@@ -1,10 +1,9 @@
 body {
-    background-color: rgb(129, 129, 129);
+    background-image: linear-gradient(to bottom, black, blue);
+    font-family: 'Times New Roman', Times, serif;
 }
 
-CountdownStatus {
-    color: red;
-}
+
 
 h1 {
     color: Blue;
@@ -16,4 +15,20 @@ h2 {
 
 div {
     color: red;
+}
+
+#paraFunc {
+    color: white;
+    
+}
+
+#headFunc {
+    color: rgb(0, 100, 255);
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+#CountdownStatus {
+    color: red;
+    font-style: oblique;
 }
