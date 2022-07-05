@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(129, 129, 129);
+}
+
+CountdownStatus {
+    color: red;
+}
+
+h1 {
+    color: Blue;
+}
+
+h2 {
+    color: red;
+}
+
+div {
+    color: red;
+}
