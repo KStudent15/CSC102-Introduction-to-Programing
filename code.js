@@ -86,3 +86,39 @@ function start() {
 
 
 }
+//fucntion to play craps called playCraps()
+function playCraps() {
+    // displays "playCraps() started" in console
+    console.log("playCraps() started");
+    //Generate variables, die1, die2, sum
+    var die1;
+    var die2;
+    var sum;
+
+    //Roll the dice and displays it in console
+    //takes a math.random fucntion multiplies it by 6 and adds 1 to get whole numbers 1-6 without going over or under
+    die1 = Math.floor(Math.random() * 6) + 1;
+    console.log(die1);
+    die2 = Math.floor(Math.random() * 6) + 1;
+    console.log(die2);
+    //determines the sum of both dice, saves it in variable sum, and logs the result in console
+    sum = die1 + die2;
+    console.log("sum is equal to " + sum);
+    //follows the rules of craps and displays message for winning, losing, or tie
+    //lose
+    //checks to see if sum of dice is equal to 7 or 11 and changes crapsStatus to "Craps!!! You Lose!" if true
+    if (sum == 7 || sum == 11) {
+        document.getElementById("crapsStatus").innerHTML = "Craps!!! You Lose!"
+    }
+    //win
+    //checks to see if dice are equal to each other and if so checks to see if dice are even. If true displays "You Win!!!"" in crapsStatus
+    else if (die1 == die2 && die1 % 2 == 0) {
+        document.getElementById("crapsStatus").innerHTML = "You Win!!!"
+    }
+    //tie 
+    //if both of the above statments are false displays "You did not lose. Play again?"" 
+    else {
+        document.getElementById("crapsStatus").innerHTML = "You did not lose. Play again?"
+    }
+
+}

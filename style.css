@@ -1,16 +1,16 @@
 body {
-    background-image: linear-gradient(to bottom, black, blue);
+    background-image: linear-gradient(270deg, black, blue);
     font-family: 'Times New Roman', Times, serif;
 }
 
 
 
 h1 {
-    color: Blue;
+    color: white;
 }
 
 h2 {
-    color: red;
+    color: white;
 }
 
 div {
@@ -19,11 +19,11 @@ div {
 
 #paraFunc {
     color: white;
-    
+
 }
 
 #headFunc {
-    color: rgb(0, 100, 255);
+    color: white;
     font-size: 2em;
     text-decoration: underline;
 }
@@ -31,4 +31,7 @@ div {
 #CountdownStatus {
     color: red;
     font-style: oblique;
+}
+#crapsStatus {
+    color:white
 }
