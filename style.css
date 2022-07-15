@@ -2,7 +2,9 @@ body {
     background-image: linear-gradient(270deg, black, blue);
     font-family: 'Times New Roman', Times, serif;
 }
-
+tbody {
+    color: white;
+}
 
 
 h1 {
