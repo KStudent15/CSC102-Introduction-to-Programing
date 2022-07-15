@@ -4,7 +4,7 @@ Assignment: Launching your UAT Space Program HTML Document Tags
 Kaiden Wallenfelsz
 kaiwalle@uat.edu */
 
-//Fucntion for countdown timer ver 1 
+//Fucntion for countdown timer V1 
 //Fucntion is activated on clicking button start
 //10
 function blastoffTimerV1() {
@@ -126,10 +126,12 @@ function playCraps() {
 function blastoffTimerV2() {
     console.log("blastoffTimerV2() Started");
     //loop that runs 11 times, 10 for countdown, 1 for Blast off.
+    //Sets the variable to countdown from
     var countdownTimer = 10;
+    //Sets the duration between countdowns 
     var stepTime = 1000;
 
-
+    // Function that counts down from var coundownTimer using stepTime as the increment
     for (var i = 0; i < countdownTimer; i = i + 1) {
         setTimeout(function () {
             console.log(countdownTimer);
@@ -142,4 +144,35 @@ function blastoffTimerV2() {
         document.getElementById("CountdownStatus").innerHTML = "Blastoff!!!!";
         console.log("Blastoff!");
     }, stepTime * countdownTimer)
+}
+
+function blastoffTimerV3() {
+    console.log("blastoffTimerV2() Started");
+    //loop that runs 11 times, 10 for countdown, 1 for Blast off.
+    //Sets the variable to countdown from
+    var countdownTimer = 10;
+    //Sets the duration between countdowns 
+    var stepTime = 1000;
+
+    // Function that counts down from var coundownTimer using stepTime as the increment
+    for (var i = 0; i <= countdownTimer; i = i + 1) {
+        setTimeout(function () {
+            console.log(countdownTimer);
+            if (countdownTimer <= 0) {
+                //if timer is less than or equal to 0 displays Blastoff!!!!
+                document.getElementById("CountdownStatus").innerHTML = "Blastoff!!!!";
+                console.log("Blastoff!");
+            } else if (countdownTimer < 5) {
+                // if timer is less than 5 displays "Warning less than ½ way to launch time left = countdownTimer"
+                document.getElementById("CountdownStatus").innerHTML = "Warning less than ½ way to launch, time left = " + countdownTimer;
+                countdownTimer = countdownTimer - 1;
+            } else {
+                // otherwise it just counts down normally
+                document.getElementById("CountdownStatus").innerHTML = countdownTimer;
+                countdownTimer = countdownTimer - 1;
+            }
+
+        }, stepTime * i)
+    }
+
 }
