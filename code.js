@@ -7,7 +7,7 @@ kaiwalle@uat.edu */
 //Fucntion for countdown timer ver 1 
 //Fucntion is activated on clicking button start
 //10
-function start() {
+function blastoffTimerV1() {
     console.log("start() function started");
     var currTime = 10;
     console.log(currTime);
@@ -121,4 +121,25 @@ function playCraps() {
         document.getElementById("crapsStatus").innerHTML = "You did not lose. Play again?"
     }
 
+
+}
+function blastoffTimerV2() {
+    console.log("blastoffTimerV2() Started");
+    //loop that runs 11 times, 10 for countdown, 1 for Blast off.
+    var countdownTimer = 10;
+    var stepTime = 1000;
+
+
+    for (var i = 0; i < countdownTimer; i = i + 1) {
+        setTimeout(function () {
+            console.log(countdownTimer);
+            document.getElementById("CountdownStatus").innerHTML = countdownTimer;
+            countdownTimer = countdownTimer - 1;
+        }, stepTime * i)
+
+    }
+    setTimeout(function () {
+        document.getElementById("CountdownStatus").innerHTML = "Blastoff!!!!";
+        console.log("Blastoff!");
+    }, stepTime * countdownTimer)
 }
