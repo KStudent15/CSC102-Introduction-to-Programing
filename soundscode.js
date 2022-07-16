@@ -176,7 +176,7 @@ function blastoffTimerV3() {
     }
 
 }
-//disables start button when start button is pressed and enables stop button
+//when start button is pressed starts timer, enables stop button, and disables start button 
 function startFun() {
     blastoffTimerV3();
     console.log("startFun() started");
