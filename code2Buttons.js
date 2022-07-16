@@ -145,7 +145,7 @@ function blastoffTimerV2() {
         console.log("Blastoff!");
     }, stepTime * countdownTimer)
 }
-
+//blastoff timer version 3 
 function blastoffTimerV3() {
     console.log("blastoffTimerV2() Started");
     //loop that runs 11 times, 10 for countdown, 1 for Blast off.
@@ -176,13 +176,13 @@ function blastoffTimerV3() {
     }
 
 }
-
+//disables start button when start button is pressed and enables stop button
 function startFun() {
     console.log("startFun() started");
     document.getElementById("startButton").disabled = true;
     document.getElementById("stopButton").disabled = false;
 }
-
+//disables stop button when stop button is pressed and enables start button
 function stopFun() {
     console.log("stopFun() started");
     document.getElementById("stopButton").disabled = true;
