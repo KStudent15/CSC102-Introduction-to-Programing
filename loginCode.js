@@ -8,13 +8,13 @@ function checkCreds() {
     var fullName;
     var fullNameLength;
 
-    firstName = doucment.getElementById("fName").value;
+    firstName = document.getElementById("fName").value;
     console.log("The first name is: " + firstName);
 
-    lastName = doucment.getElementById("lName").value;
+    lastName = document.getElementById("lName").value;
     console.log("The last name is: " + lastName);
 
-    badgeNumb = doucment.getElementById("badgeID").value;
+    badgeNumb = document.getElementById("badgeID").value;
     console.log("The badge number is: " + badgeNumb);
 
     fullName = firstName + " " + lastName;
