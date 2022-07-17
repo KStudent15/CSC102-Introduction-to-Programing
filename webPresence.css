@@ -1,16 +1,21 @@
 body {
-    background-image: linear-gradient(270deg, black, blue);
+    background-image: linear-gradient(270deg, black, lightblue);
     font-family: 'Times New Roman', Times, serif;
 }
-
-
-
 
 h1 {
     color: white;
 }
 
 h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+footer {
     color: white;
 }
 
@@ -47,7 +52,7 @@ div {
 }
 
 #data {
-    background-image: linear-gradient(200deg, white, blue);
+    background-image: linear-gradient(200deg, white, lightblue);
 }
 
 tbody {
