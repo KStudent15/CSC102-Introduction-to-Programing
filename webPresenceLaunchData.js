@@ -96,49 +96,49 @@ function updateDisplay() {
         document.getElementById("data").rows["bmp_pressure"].innerHTML =
             dataRow("bmp_pressure", data[index].bmpSensor_pressure, "");
         //bmp_temperature
-        document.getElementById("data").rows["bmp_temp"].innerHTML =
+        document.getElementById("data").rows["bmp_temperature"].innerHTML =
             dataRow("bmp_temp", data[index].bmpSensor_temp, "");
         //dig_temperature
-        document.getElementById("data").rows["dig_temp"].innerHTML =
+        document.getElementById("data").rows["dig_temperature"].innerHTML =
             dataRow("dig_temp", data[index].digSensor_temp, "");
         //css_temperature
-        document.getElementById("data").rows["css_temp"].innerHTML =
+        document.getElementById("data").rows["css_temperature"].innerHTML =
             dataRow("css_temp", data[index].cssSensor_temp, "");
         //css_eCO2
         document.getElementById("data").rows["css_eCO2"].innerHTML =
             dataRow("css_eCO2", data[index].cssSensor_eCO2, "");
         //css_TVOC
-        document.getElementById("data").rows["latcss_TVOCitude"].innerHTML =
+        document.getElementById("data").rows["css_TVOC"].innerHTML =
             dataRow("css_TVOC", data[index].cssSensor_TVOC, "");
         //UV
-        document.getElementById("data").rows["UV"].innerHTML =
+        document.getElementById("data").rows["uv"].innerHTML =
             dataRow("UV", data[index].UV, "");
         //accelX
-        document.getElementById("data").rows["accelX"].innerHTML =
+        document.getElementById("data").rows["accel_x"].innerHTML =
             dataRow("LatiaccelXtude", data[index].accelX, "");
         //accelY
-        document.getElementById("data").rows["accelY"].innerHTML =
+        document.getElementById("data").rows["accel_y"].innerHTML =
             dataRow("accelY", data[index].accelY, "");
         //accelZ
-        document.getElementById("data").rows["accelZ"].innerHTML =
+        document.getElementById("data").rows["accel_z"].innerHTML =
             dataRow("accelZ", data[index].accelZ, "");
         //magneticX
-        document.getElementById("data").rows["magneticX"].innerHTML =
+        document.getElementById("data").rows["magnetic_x"].innerHTML =
             dataRow("magneticX", data[index].magneticX, "");
         //magneticY
-        document.getElementById("data").rows["magneticY"].innerHTML =
+        document.getElementById("data").rows["magnetic_y"].innerHTML =
             dataRow("magneticY", data[index].magneticY, "");
         //magneticZ
-        document.getElementById("data").rows["magneticZ"].innerHTML =
+        document.getElementById("data").rows["magnetic_z"].innerHTML =
             dataRow("magneticZ", data[index].magneticZ, "");
         //gyroX
-        document.getElementById("data").rows["gyroX"].innerHTML =
+        document.getElementById("data").rows["gyro_x"].innerHTML =
             dataRow("gyroX", data[index].gyroX, "");
         //gyroY
-        document.getElementById("data").rows["gyroY"].innerHTML =
+        document.getElementById("data").rows["gyro_y"].innerHTML =
             dataRow("gyroY", data[index].gyroY, "");
         //gyroZ
-        document.getElementById("data").rows["gyroZ"].innerHTML =
+        document.getElementById("data").rows["gyro_z"].innerHTML =
             dataRow("gyroZ", data[index].gyroZ, "");
     }
 
