@@ -5,45 +5,45 @@ class InputData {
         latitude,
         longitude,
         gps_altitude,
-        bmpSensor_altitude,
-        bmpSensor_pressure,
-        bmpSensor_temp,
-        digSensor_temp,
-        cssSensor_temp,
+        bpmSensor_altitude,
+        bpmSensor_pressure,
+        bpmSensor_temperature,
+        digSensor_temperature,
+        cssSensor_temperature,
         cssSensor_eCO2,
         cssSensor_TVOC,
-        UV,
-        accelX,
-        accelY,
-        accelZ,
-        magneticX,
-        magneticY,
-        magneticZ,
-        gyroX,
-        gyroY,
-        gyroZ,
+        uv,
+        accel_x,
+        accel_y,
+        accel_z,
+        magnetic_x,
+        magnetic_y,
+        magnetic_z,
+        gyro_x,
+        gyro_y,
+        gyro_z,
     ) {
         this.time_seconds = time_seconds;
         this.latitude = latitude;
         this.longitude = longitude;
         this.gps_altitude = gps_altitude;
-        this.bmpSensor_altitude = bmpSensor_altitude;
-        this.bmpSensor_pressure = bmpSensor_pressure;
-        this.bmpSensor_temp = bmpSensor_temp;
-        this.digSensor_temp = digSensor_temp;
-        this.cssSensor_temp = cssSensor_temp;
+        this.bpmSensor_altitude = bpmSensor_altitude;
+        this.bpmSensor_pressure = bpmSensor_pressure;
+        this.bpmSensor_temperature = bpmSensor_temperature;
+        this.digSensor_temperature = digSensor_temperature;
+        this.cssSensor_temperature = cssSensor_temperature;
         this.cssSensor_eCO2 = cssSensor_eCO2;
         this.cssSensor_TVOC = cssSensor_TVOC;
-        this.UV = UV;
-        this.accelX = accelX;
-        this.accelY = accelY;
-        this.accelZ = accelZ;
-        this.magneticX = magneticX;
-        this.magneticY = magneticY;
-        this.magneticZ = magneticZ;
-        this.gyroX = gyroX;
-        this.gyroY = gyroY;
-        this.gyroZ = gyroZ;
+        this.uv = uv;
+        this.accel_x = accel_x;
+        this.accel_y = accel_y;
+        this.accel_z = accel_z;
+        this.magnetic_x = magnetic_x;
+        this.magnetic_y = magnetic_y;
+        this.magnetic_z = magnetic_z;
+        this.gyro_x = gyro_x;
+        this.gyro_y = gyro_y;
+        this.gyro_z = gyro_z;
     }
 }
 
@@ -90,20 +90,20 @@ function updateDisplay() {
         document.getElementById("data").rows["gps_altitude"].innerHTML =
             dataRow("gps_altitude", data[index].gps_altitude, "");
         //bmp_altitude
-        document.getElementById("data").rows["bmp_altitude"].innerHTML =
-            dataRow("bmp_altitude", data[index].bmpSensor_altitude, "");
+        document.getElementById("data").rows["bpm_altitude"].innerHTML =
+            dataRow("bpm_altitude", data[index].bpmSensor_altitude, "");
         //bmp_pressure
-        document.getElementById("data").rows["bmp_pressure"].innerHTML =
-            dataRow("bmp_pressure", data[index].bmpSensor_pressure, "");
+        document.getElementById("data").rows["bpm_pressure"].innerHTML =
+            dataRow("bpm_pressure", data[index].bpmSensor_pressure, "");
         //bmp_temperature
-        document.getElementById("data").rows["bmp_temperature"].innerHTML =
-            dataRow("bmp_temp", data[index].bmpSensor_temp, "");
+        document.getElementById("data").rows["bpm_temperature"].innerHTML =
+            dataRow("bpm_temperature", data[index].bpmSensor_temperature, "");
         //dig_temperature
         document.getElementById("data").rows["dig_temperature"].innerHTML =
-            dataRow("dig_temp", data[index].digSensor_temp, "");
+            dataRow("dig_temperature", data[index].digSensor_temperature, "");
         //css_temperature
         document.getElementById("data").rows["css_temperature"].innerHTML =
-            dataRow("css_temp", data[index].cssSensor_temp, "");
+            dataRow("css_temperature", data[index].cssSensor_temperature, "");
         //css_eCO2
         document.getElementById("data").rows["css_eCO2"].innerHTML =
             dataRow("css_eCO2", data[index].cssSensor_eCO2, "");
@@ -112,34 +112,34 @@ function updateDisplay() {
             dataRow("css_TVOC", data[index].cssSensor_TVOC, "");
         //UV
         document.getElementById("data").rows["uv"].innerHTML =
-            dataRow("UV", data[index].UV, "");
+            dataRow("uv", data[index].uv, "");
         //accelX
         document.getElementById("data").rows["accel_x"].innerHTML =
-            dataRow("LatiaccelXtude", data[index].accelX, "");
+            dataRow("accel_x", data[index].accel_x, "");
         //accelY
         document.getElementById("data").rows["accel_y"].innerHTML =
-            dataRow("accelY", data[index].accelY, "");
+            dataRow("accel_y", data[index].accel_y, "");
         //accelZ
         document.getElementById("data").rows["accel_z"].innerHTML =
-            dataRow("accelZ", data[index].accelZ, "");
+            dataRow("accel_z", data[index].accel_z, "");
         //magneticX
         document.getElementById("data").rows["magnetic_x"].innerHTML =
-            dataRow("magneticX", data[index].magneticX, "");
+            dataRow("magnetic_x", data[index].magnetic_x, "");
         //magneticY
         document.getElementById("data").rows["magnetic_y"].innerHTML =
-            dataRow("magneticY", data[index].magneticY, "");
+            dataRow("magnetic_y", data[index].magnetic_y, "");
         //magneticZ
         document.getElementById("data").rows["magnetic_z"].innerHTML =
-            dataRow("magneticZ", data[index].magneticZ, "");
+            dataRow("magnetic_z", data[index].magnetic_z, "");
         //gyroX
         document.getElementById("data").rows["gyro_x"].innerHTML =
-            dataRow("gyroX", data[index].gyroX, "");
+            dataRow("gyro_x", data[index].gyro_x, "");
         //gyroY
         document.getElementById("data").rows["gyro_y"].innerHTML =
-            dataRow("gyroY", data[index].gyroY, "");
+            dataRow("gyro_y", data[index].gyro_y, "");
         //gyroZ
         document.getElementById("data").rows["gyro_z"].innerHTML =
-            dataRow("gyroZ", data[index].gyroZ, "");
+            dataRow("gyro_z", data[index].gyro_z, "");
     }
 
     if (index < 500) {
